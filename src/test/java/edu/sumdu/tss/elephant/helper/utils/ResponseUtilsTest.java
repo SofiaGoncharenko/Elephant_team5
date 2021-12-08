@@ -36,7 +36,7 @@ public class ResponseUtilsTest {
     @Test
     @DisplayName("Test for error")
     void error() {
-        HashMap<String, String> result = (HashMap<String, String>) ResponseUtils.success(ERROR_MESSAGE);
+        HashMap<String, String> result = (HashMap<String, String>) ResponseUtils.error(ERROR_MESSAGE);
         assertEquals(result.get(STATUS_KEY), ERROR_ANSWER);
         assertEquals(result.get(MESSAGE_KEY), ERROR_MESSAGE);
     }

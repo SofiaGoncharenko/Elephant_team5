@@ -1,5 +1,6 @@
 package edu.sumdu.tss.elephant.middleware;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -14,6 +15,13 @@ class CSRFTokenServiceTest {
     @DisplayName("Test for getSiteWideToken when siteWideToken is not null")
     void getSiteWideTokenNotNull() {
         assertEquals(CSRFTokenService.getSiteWideToken(), SITE_WIDE_TOKEN);
+    }
+
+    @Disabled
+    @Test
+    @DisplayName("Test for getSiteWideToken when siteWideToken is null")
+    void getSiteWideTokenIsNull() {
+
     }
 
     @Test

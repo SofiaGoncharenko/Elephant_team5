@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class LangTest {
 
-    private static final String TEST = "ua";
+    private static final String TEST = "uk";
     private static final Lang RESULT = Lang.UK;
 
     @Test

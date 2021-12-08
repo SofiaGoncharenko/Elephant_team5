@@ -13,8 +13,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ScriptReaderTest {
 
-    private static final String PATH_FOR_SCRIPT = "path_for_script";
-    private static final String PATH_FOR_EMPTY_SCRIPT = "path_for_script";
+    private static final String PATH_FOR_SCRIPT = "test_script_1.sql";
+    private static final String PATH_FOR_EMPTY_SCRIPT = "test_script_empty_1.sql";
 
     @SneakyThrows
     @Test

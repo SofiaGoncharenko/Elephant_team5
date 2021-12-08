@@ -18,7 +18,7 @@ class ParameterizedStringFactoryTest {
     }
 
     @Test
-    @DisplayName("Test for addParameter second")
+    @DisplayName("[must fail] Test for addParameter second")
     void addParameterTest2() {
         ParameterizedStringFactory instance = new ParameterizedStringFactory(test);
         String actual = instance.addParameter("te", "TEST").addParameter("table", "TABLE").toString();

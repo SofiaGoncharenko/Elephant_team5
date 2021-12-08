@@ -25,7 +25,6 @@ class UserTest {
         USER.setToken(INIT_TOKEN);
     }
 
-    //mb initial method has wrong logic at
     @Test
     @DisplayName("Test for setPassword")
     void setPassword() {
@@ -38,9 +37,9 @@ class UserTest {
         assertEquals(USER.role(), UserRole.byValue(INIT_USER_ROLE));
     }
 
-    //mb initial method has wrong logic at
+    //mb initial method has wrong logic
     @Test
-    @DisplayName("Test for crypt")
+    @DisplayName("[must fail] Test for crypt")
     void crypt() {
         assertEquals(
                 USER.crypt(INIT_PASSWORD),
