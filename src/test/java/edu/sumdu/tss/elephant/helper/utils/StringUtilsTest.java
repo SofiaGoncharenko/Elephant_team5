@@ -13,7 +13,7 @@ class StringUtilsTest {
     private static final String TEXT_FIRST_RESULT = "This test for the, replaceLast method|Replace| just check it";
     private static final String TEXT_SECOND_RESULT = "This test for the, replaceLast method, just c|Replace|ck it";
     private static final String REPLACED_FIRST = ",";
-    private static final String REPLACED_SECOND = ",he";
+    private static final String REPLACED_SECOND = "he";
     private static final String FOR_REPLACE = "|Replace|";
 
     @Test

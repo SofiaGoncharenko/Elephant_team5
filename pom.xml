@@ -103,6 +103,16 @@
             <version>5.8.1</version>
             <scope>test</scope>
         </dependency>
+
+        <!--added to solve problem with junit-vintage -->
+        <dependency>
+            <groupId>org.junit.vintage</groupId>
+            <artifactId>junit-vintage-engine</artifactId>
+            <version>5.2.0</version>
+            <scope>test</scope>
+        </dependency>
+        <!--added to solve problem with junit-vintage -->
+
         <!-- Integration testing -->
         <dependency>
             <groupId>com.konghq</groupId>

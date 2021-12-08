@@ -52,10 +52,10 @@ class UserRoleTest {
     @Test
     @DisplayName("Test for admin")
     void adminUserRole() {
-        assertEquals(UserRole.ANYONE.maxConnections(), 5);
-        assertEquals(UserRole.ANYONE.maxDB(), 100);
-        assertEquals(UserRole.ANYONE.maxStorage(), 50 * FileUtils.ONE_MB);
-        assertEquals(UserRole.ANYONE.maxBackupsPerDB(), 10);
-        assertEquals(UserRole.ANYONE.maxScriptsPerDB(), 10);
+        assertEquals(UserRole.ADMIN.maxConnections(), 5);
+        assertEquals(UserRole.ADMIN.maxDB(), 100);
+        assertEquals(UserRole.ADMIN.maxStorage(), 50 * FileUtils.ONE_MB);
+        assertEquals(UserRole.ADMIN.maxBackupsPerDB(), 10);
+        assertEquals(UserRole.ADMIN.maxScriptsPerDB(), 10);
     }
 }
