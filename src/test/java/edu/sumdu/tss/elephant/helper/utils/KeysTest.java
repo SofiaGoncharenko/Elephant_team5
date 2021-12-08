@@ -2,6 +2,7 @@ package edu.sumdu.tss.elephant.helper.utils;
 
 import edu.sumdu.tss.elephant.helper.Keys;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.io.*;
@@ -18,12 +19,17 @@ public class KeysTest {
     }
 
     @Test
-    void testLoadWrongFile() {
-        assertThrows(RuntimeException.class, () -> Keys.loadParams(new File("")));
+    @DisplayName("Test for loadParams")
+    void loadParamsWithEmptyFile() {
+        assertThrows(
+                RuntimeException.class,
+                () -> Keys.loadParams(new File(""))
+        );
     }
 
     @Test
-    void testNegativeLoadParam() {
+    @DisplayName("Test for loadParams")
+    void loadParams1() {
         try {
             Properties properties = new Properties();
             properties.load(new FileReader(file));
@@ -39,7 +45,8 @@ public class KeysTest {
     }
 
     @Test
-    void testNegativeLoadSecureParam() {
+    @DisplayName("Test for loadParams")
+    void loadParams2() {
         try {
             Properties properties = new Properties();
             properties.load(new FileReader(file));
@@ -55,7 +62,8 @@ public class KeysTest {
     }
 
     @Test
-    void testGet() {
+    @DisplayName("Test for get")
+    void get() {
         Keys.loadParams(file);
         assertThrows(RuntimeException.class, () -> Keys.get(StringUtils.randomAlphaString(5)));
         String db = Keys.get("DB.NAME");
@@ -64,7 +72,8 @@ public class KeysTest {
     }
 
     @Test
-    void testIsProduction() {
+    @DisplayName("Test for isProduction")
+    void isProduction() {
         try {
             Properties properties = new Properties();
             properties.load(new FileReader(file));

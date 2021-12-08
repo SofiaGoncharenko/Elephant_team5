@@ -6,11 +6,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class LangTest {
 
-    public static String test = "ua";
+    private static final String TEST = "ua";
+    private static final Lang RESULT = Lang.UK;
 
     @Test
     public void testByValue() {
-        Lang result = Lang.byValue(test);
-        assertEquals(test, result);
+        Lang result = Lang.byValue(TEST);
+        assertEquals(result, RESULT);
     }
 }
