@@ -52,5 +52,4 @@ public class TableController extends AbstractController {
         app.get(BASIC_PAGE, TableController::index, UserRole.AUTHED);
         app.get(BASIC_PAGE + "{table}", TableController::preview_table, UserRole.AUTHED);
     }
-
 }

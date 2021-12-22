@@ -148,5 +148,4 @@ public class ScriptsController extends AbstractController {
         app.post(BASIC_PAGE + "{script}", ScriptsController::run);
         app.post(BASIC_PAGE + "{script}/delete", ScriptsController::delete);
     }
-
 }

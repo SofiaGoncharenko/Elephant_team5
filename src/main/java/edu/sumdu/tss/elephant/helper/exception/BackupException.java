@@ -13,5 +13,4 @@ public class BackupException extends HttpError500 {
     public BackupException(String message, Exception ex) {
         super(message, ex);
     }
-
 }

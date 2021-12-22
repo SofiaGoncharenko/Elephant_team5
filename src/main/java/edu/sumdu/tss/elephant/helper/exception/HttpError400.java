@@ -17,5 +17,4 @@ public class HttpError400 extends HttpException {
     public Integer getCode() {
         return 400;
     }
-
 }

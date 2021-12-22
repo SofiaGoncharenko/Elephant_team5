@@ -9,5 +9,4 @@ public class NotFoundException extends HttpError400 {
     public Integer getCode() {
         return 404;
     }
-
 }

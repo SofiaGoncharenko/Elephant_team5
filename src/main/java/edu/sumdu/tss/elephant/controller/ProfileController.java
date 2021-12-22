@@ -88,5 +88,4 @@ public class ProfileController extends AbstractController {
         app.post(BASIC_PAGE + "/remove-self", ProfileController::removeSelf, UserRole.AUTHED);
         app.get(BASIC_PAGE, ProfileController::show, UserRole.AUTHED);
     }
-
 }

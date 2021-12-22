@@ -157,5 +157,4 @@ public class LoginController extends AbstractController {
         app.get(BASIC_PAGE + "/lang/{lang}", LoginController::lang, UserRole.ANYONE);
         app.get("/logout", LoginController::destroy, UserRole.AUTHED);
     }
-
 }

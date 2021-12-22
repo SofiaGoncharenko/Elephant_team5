@@ -78,5 +78,4 @@ public class Keys {
     public static boolean isProduction() {
         return Keys.get("ENV").equalsIgnoreCase("production");
     }
-
 }

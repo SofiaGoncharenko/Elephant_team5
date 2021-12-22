@@ -99,5 +99,3 @@ public class MailService {
         return mmp;
     }
 }
-
-

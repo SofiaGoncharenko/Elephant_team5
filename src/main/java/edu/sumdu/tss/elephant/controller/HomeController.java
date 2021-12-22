@@ -37,6 +37,4 @@ public class HomeController extends AbstractController {
         app.get("/", HomeController::show, UserRole.AUTHED);
         app.get(BASIC_PAGE, HomeController::show, UserRole.AUTHED);
     }
-
-
 }

@@ -99,5 +99,4 @@ public class RegistrationController extends AbstractController {
         app.get(BASIC_PAGE, RegistrationController::show, UserRole.ANYONE);
         app.post(BASIC_PAGE, RegistrationController::create, UserRole.ANYONE);
     }
-
 }

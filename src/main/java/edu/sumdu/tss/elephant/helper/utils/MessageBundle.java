@@ -33,5 +33,4 @@ public class MessageBundle {
     public final String get(final String key, final Object... args) {
         return MessageFormat.format(get(key), args);
     }
-
 }

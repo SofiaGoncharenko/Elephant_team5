@@ -51,5 +51,4 @@ public abstract class AbstractController {
      * @param app
      */
     public abstract void register(Javalin app);
-
 }

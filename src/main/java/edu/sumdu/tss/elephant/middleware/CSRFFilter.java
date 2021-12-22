@@ -30,5 +30,4 @@ public class CSRFFilter {
         String newToken = CSRFTokenService.generateToken(sessionID);
         ctx.sessionAttribute("csrf", newToken);
     }
-
 }

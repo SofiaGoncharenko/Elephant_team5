@@ -24,5 +24,4 @@ public class Hmac {
         mac.init(secretKeySpec);
         return toHexString(mac.doFinal(data.getBytes()));
     }
-
 }

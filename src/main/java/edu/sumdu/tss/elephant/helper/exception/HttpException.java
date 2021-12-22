@@ -26,5 +26,4 @@ public class HttpException extends RuntimeException {
     public String getIcon() {
         return DEFAULT_ICON;
     }
-
 }

@@ -120,5 +120,4 @@ public class SqlController extends AbstractController {
         app.get(BASIC_PAGE, SqlController::show, UserRole.AUTHED);
         app.post(BASIC_PAGE, SqlController::run);
     }
-
 }

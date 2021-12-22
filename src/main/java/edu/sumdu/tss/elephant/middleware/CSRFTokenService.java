@@ -42,5 +42,4 @@ public class CSRFTokenService {
         String newToken = generateToken(sessionID, Long.parseLong(time));
         return newToken.equals(token);
     }
-
 }

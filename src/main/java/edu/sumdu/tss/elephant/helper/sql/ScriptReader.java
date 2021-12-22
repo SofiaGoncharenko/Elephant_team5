@@ -335,6 +335,4 @@ public class ScriptReader implements Closeable {
     public void setSkipRemarks(boolean skipRemarks) {
         this.skipRemarks = skipRemarks;
     }
-
 }
-

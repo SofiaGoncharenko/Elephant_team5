@@ -86,5 +86,4 @@ public class DatabaseService {
                 .addParameter("owner", database.getOwner())
                 .executeUpdate();
     }
-
 }

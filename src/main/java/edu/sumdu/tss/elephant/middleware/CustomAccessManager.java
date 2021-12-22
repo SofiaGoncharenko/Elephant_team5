@@ -37,5 +37,4 @@ public class CustomAccessManager {
 
         return role;
     }
-
 }

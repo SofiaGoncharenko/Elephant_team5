@@ -55,6 +55,4 @@ public class DatabaseController extends AbstractController {
         app.post(BASIC_PAGE + "{database}/delete", DatabaseController::delete, UserRole.AUTHED);
         app.post(BASIC_PAGE, DatabaseController::create, UserRole.AUTHED);
     }
-
-
 }

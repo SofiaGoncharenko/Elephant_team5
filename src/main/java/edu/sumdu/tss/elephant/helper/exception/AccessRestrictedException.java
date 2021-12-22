@@ -15,5 +15,4 @@ public class AccessRestrictedException extends HttpError400 {
     public AccessRestrictedException(String message) {
         super(message);
     }
-
 }

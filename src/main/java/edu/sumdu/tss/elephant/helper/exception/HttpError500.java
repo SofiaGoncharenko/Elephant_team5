@@ -17,5 +17,4 @@ public class HttpError500 extends HttpException {
     public HttpError500(String message, Exception ex) {
         super(message, ex);
     }
-
 }
